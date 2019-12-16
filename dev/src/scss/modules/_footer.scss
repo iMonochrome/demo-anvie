@@ -1,5 +1,53 @@
 /*! footer */
 footer {
-  // style here
+	width: 1200px;
+	margin: 0 auto;
+	.footer__menu{	
+		height: 70px;
+		background-color: #555555	;
+		.nav{
+  		width: 1100px;
+  			.text__jp{
+  				border-left: 3px solid green;
+  				height: 30px;
+  				width: 130px;
+  				color: white;
+  				background: black;
+  				box-sizing: border-box;
+  				.touch{
+  					width: 130px;
+  					height: 30px;
+  				}
+  			}
+  		}
+  	}
+  	.footer__box{
+  		height: 300px;
+  		background:black;
+  		.footer__content{
+  			.text__jp{
+  				padding-top: 100px;
+  				color: white;
+  				font-size: 16px;
+  			}
+  			.nav{
+  				width: 600px;
+  				padding-top: 20px;
+  				color: white;
+  			}
+  			.img__footer{
+  				padding-top: 20px;
+  				display: flex;
+  				justify-content: space-between;
+  				width: 100px;
+  				.img{
+  					width: 20px;
+  					height: 20px;
+  					border-radius: 10px;
+  		}
+  	}
+
+  		}
+  	}
 }
 /*! footer end */

@@ -1,3 +1,231 @@
-#index {
-    background: red;
+/*!content!*/
+
+content{
+	width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    background-color:#EEEEEE;
+    z-index: 1;
+    /*start title__content*/
+   .title__content{
+   	::before{
+    width: 80px;
+    height: 75px;
+    background: #007F54;
+    content: "";
+    top:490px;
+    right: 0;
+    z-index: 2;
+    position: absolute;
+   }
+   ::after{
+    opacity: 0.3;
+    position: absolute;
+    width: 450px;
+    height: 270px;
+    background: #C0C0C0;
+    z-index:0;
+    content: "";
+    top:530px;
+    right:0;
+   }
+   /*end title__content*/
 }
+        /*start*/
+        .img__banner{
+        width: 1200px;
+        height: 400px;
+        background-size: 100%;
+        }
+        /*end*/
+        /*start*/
+    	.content__chill{
+    		width: 1000px;
+    		margin:0 auto;
+    	}
+        /*end*/
+        /*start*/
+   		.name__content, .time__content,.title__content, .member__content{
+   		.h1{
+  		  	font-size: 25px;
+ 		  	color: green;
+  		  	padding-top: 30px;
+    	}
+    	.h2{
+    		font-size: 20px;
+    		font-weight: bold;
+    		padding-bottom: 20px;
+    		margin-top: -25px;
+    	}
+    }
+        /*end*/
+        /*start*/
+    	.title__content, .time__content{
+    	.description{
+    		font-size: 16px;
+    		padding-bottom: 30px;
+    	}
+    	.h3{
+    		font-weight: bold;
+    		font-size: 16px;
+    	}
+    }
+        /*end*/
+        /*start*/
+    	.time__content{
+    		table{
+    			width: 100%;
+  				max-width: 1000px;
+  				margin-bottom: 50px;
+    		}
+    		td{
+    			border-bottom: 1px solid #4F4F4F;
+   				height: 30px;
+   				line-height: 3;
+   				font-weight: bold;
+    		}
+        }
+        /*end*/
+        /*start*/
+    	.image__content{
+    		width: 1000px;
+    		height: 300px;
+    		display: flex;
+    		justify-content: space-between;
+    		.img{
+    			margin: 0;
+    			width: 450px;
+    			height: 300px;
+    		}
+    	}
+        /*end*/
+        /*start member__content_flex*/
+    	.member__content__flex{
+    		width: 1000px;
+    		height: 1200px;
+    		    .column{
+    			    margin-bottom: 140px;
+                    background-color: #FFFAFA;
+                        .imagebox{
+                            position: relative;
+                            overflow: hidden;
+                            .overlay{
+                                height: 300px;
+                                top:0;
+                                right: 300px;
+                                position: absolute;
+                                width: 300px;
+                                overflow: hidden;
+                                background: #006400;
+                                opacity: 0.5;
+                                transition: all 0.5s ease;
+                            }
+                        /*end overlay*/ 
+                        &:hover {
+                            .overlay{
+                                right: 0;  
+                            }
+                        }
+                        /*end hover*/
+                    }
+                    /*end imagebox*/
+                .img{
+                    width: 300px;
+                    height: 300px;
+                    display: block;
+                 }
+
+                .column__title{
+                    font-size: 16px;
+                    padding-left: 40px;
+                    padding-top: 30px;
+                 }
+                .column__title__name{
+                    font-size: 16px;
+                    color: green;
+                    }
+                .name__japan{
+                    font-weight: bold;
+                    padding-left: 40px;
+                    color: black;
+                    font-size: 20px;
+                }
+                    .text{
+                        color: white;
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        text-align: center;
+                        transform: translate(-50%,-50%);
+                        font-size: 16px; 
+                    }
+            }
+            /*end column*/
+        }
+        /*end member__content_flex*/
+        /*start*/
+            .content__content{
+                width: 100%;
+                height: 100px;
+                .text__entry{
+                    font-size: 26px;
+                    height: 32px;
+                    line-height: 1.2;
+                    color: green;
+                }
+                .text__japan{
+                    font-size: 16px;
+                }
+            }
+            /*end*/
+            /*start*/
+            .content__middle{
+                width: 1000px;
+                margin: 0 auto;
+                    .item__one{
+                        font-size: 20px;
+                    }
+            }
+            /*end*/
+            /*start*/
+            .img__middle{
+                width: 1000px;
+                margin: 0 auto;
+                height: 150px;
+                .imgbox{
+                    width: 49%;
+                    height: 100px;
+                }
+                .imgbox__left{
+                    border-bottom: 4px solid green;
+                }
+            }
+            /*end*/
+            /*start img__end*/
+            .img__end{
+                margin: 0 auto;
+                width: 1000px;
+                background-color: black;
+                position: relative;
+                margin-bottom: 90px;
+                .textbox{
+                    width: 1000px;
+                    height: 70px;
+                    color: white;
+                    font-size: 20px;
+                }
+                .line{
+                    width: 38px;
+                    height: 2px;
+                    background-color: green;
+                    position: absolute;
+                    top:50%;
+                    right: -19px;
+                }
+            }
+            /*end .img__end*/
+        }
+    /*end content*/

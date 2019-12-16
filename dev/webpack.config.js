@@ -10,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, '../assets')
   },
   mode: 'development',
-  entry: [`${SRC}/scss/application.scss`],
+    entry: [`${SRC}/scss/application.scss`],
   optimization: {
     minimize: true
   },
