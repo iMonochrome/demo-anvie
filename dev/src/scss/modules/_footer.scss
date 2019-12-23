@@ -2,89 +2,121 @@
 #footer {
     width: 100%;
 	.footer__menu{	
-		height: 70px;
+		height: 80px;
 		background-color: #555555	;
-		.nav{
-  		width: 80%;
-  			.text__jp{
-  				border-left: 3px solid green;
-  				height: 30px;
-  				width: 130px;
-  				color: white;
-  				background: black;
-  				box-sizing: border-box;
-  				.touch{
-  					width: 130px;
-  					height: 30px;
-            &:hover{
-              background:green;
-            }
-  				}
-  			}
+    .touch{
+      margin-right: 10px;
+  		width: auto;
+      min-width: 160px;
+      height: 40px;
+      padding: 0 25px;
+      font-size: 1.1rem;
+      letter-spacing: 1.1px;
+      background-color: black;
+      color: #fff;
+      position: relative;
+      .img__button{
+        margin-left: 10px;
+      }
+      .after{
+        width: 5px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+        top:0;
+        background: #007457;
+      }
+      &:hover{
+        .after{
+         width: 100%;
+          right: 0;
+          transition: all .4s;
+          opacity: 0.5;
+        }
+      }
   		}
-  	}
+
+    }
   	.footer__content{
   			height: auto;
-  		background:black;
-        li:hover{
-          background: green;
+  		  background:black;
+        padding-top: 250px;
+        .action:hover{
+          .text__en, .text__jp{
+            color: #007457;
+            transition: all 0.4s;
+          }
+        }
+        .footer__logo{
+          margin-bottom: 45px;
+        }
+        .text__en{
+          font-family: Montserrat, sans-serif;
+          font-size: 1.4rem;
+          font-weight: 700;
         }
   			.text__jp{
-  				padding-top: 150px;
-  				color: white;
-  				font-size: 16px;
+  				color: #fff;
+  				font-size: 1rem;
+          letter-spacing: 1px;
   			}
   			.nav{
-  				width: 600px;
-  				padding-top: 20px;
-  				color: white;
+          width: 55%;
+  				color: #fff;
+          margin-bottom: 40px;
   			}
   			.img__footer{
-  				padding-top: 20px;
-  				display: flex;
-  				justify-content: space-between;
+          margin-bottom: 20px;
   				width: 140px;
   				.img{
-  					width: 30px;
-  					height: 30px;
+  					width: 32px;
+  					height: 32px;
   					border-radius: 20px;
   				}
   			}
   			.telephone__jp{
-  				padding-top: 20px;
-  				width: 100%;
-  				.name__jp__left, .name__jp__right{
-
-  					width: 47%;
-  					.left, .right{
+  				margin-bottom: 54px;
+  				width: 25%;
+  				.name__jp{
+            width: 47%;
+  					
   						.name{
-  							height: 16px;
+                font-weight: 300;
+                letter-spacing: 1px;
 	  						color: white;
-	  						font-size: 16px;
+	  						font-size: 1rem;
 	  						max-width: 100%;
   						}
   						.telephone{
+                font-family: "DIN Condensed",Montserrat,sans-serif;
 	  						max-width: 100%;;
-	  						color: white;
-	  						font-size: 25px;
+	  						color: #fff;
+                letter-spacing: 3px;
+	  						font-size: 22px;
+                font-weight: 700;
   						}	
-  					}
+  					
   				}
   			}
   			.copyright{
   				padding-top: 50px;
   				.textbox{
-  					color: white;
-  					font-size: 16px;
+  					color: #fff;
+  					font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 110px;
+            letter-spacing: 2px;
   				}
   			}
   			.footer__end{
-  				padding-top: 110px;
   				width: 100%;
   				.textbox{
-  					color: white;
-  					padding-left: 25px;
+  					color: #fff;
+  					padding-left: 30px;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
   					text-decoration: underline;
+            padding-bottom: 20px;
   					}
   				}
   			}
