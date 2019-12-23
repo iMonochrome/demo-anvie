@@ -120,5 +120,13 @@
   					}
   				}
   			}
+        @include mq-xl-down {
+          .footer__menu{
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+
+          }
+        }
   		}
 /*! footer end */

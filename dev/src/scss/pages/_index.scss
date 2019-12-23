@@ -12,6 +12,10 @@
             max-width: 100%;
             width: 100%;
             height: 100%;
+             @include mq-md-down{
+                background-image: url(https://anvie.design/cl-yokoo/wp-content/themes/new_1025/assets/images/sp/recruit-detail-mv-sp.jpg);
+
+             }
             }
         .text__banner{
             position: absolute;
@@ -167,14 +171,16 @@
                 letter-spacing: 1.5px;
                 margin-bottom: 50px;
              }
+         
+    }
             .content__member__flex{
                 height: 100%;
                 width: 1040px;
                 padding-bottom:  50px;
                     .column{
                         margin-bottom: 50px;
-                        width: 32%;
                         position: relative;
+                        width: 32%;
                             .item{
                                 font-size: 1rem;
                                 letter-spacing: 0.5px;
@@ -192,7 +198,7 @@
                                  .overlay{
                                     height: 100%;
                                     top:0;
-                                    right: 350px;
+                                    left:-100%;
                                     position: absolute;
                                     width: 100%;
                                     overflow: hidden;
@@ -209,13 +215,13 @@
                                 }
                             &:hover {
                                 .overlay{
-                                    right: 0;  
+                                    
+                                    left: 0;  
                                     }
                                 }
                             }
                     .img{
                         width: 100%;
-                        height: 300px;
                         display: block;
                      }
                      .member__item__content{
@@ -251,7 +257,7 @@
             }
         }
             
-   }
+   
         
         
         /*start*/
@@ -344,4 +350,34 @@
                 }
             }
         }
-    }
+        @include mq-md-down{
+            .content__member{
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                .content__member__flex{
+                    display: flex;
+                    flex-direction: column;
+                    .column{
+                        background: red;
+                        width: 100%;
+                        position: relative;
+                        
+                        .img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+        @include mq-md-down{
+            .content__about__chill{
+                .image__content{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+}
